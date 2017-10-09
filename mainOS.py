@@ -5,14 +5,17 @@
 
 from Core import Core
 import queue, os
-from auth import Authorisation
+from Authorisation import Authorisation
 from commonFunctions import *
 
 def main():
     clear_screen()
     auth = Authorisation()
-
-
+    if not auth.successful_login:
+        clear_screen()
+        printOSinfo()
+        print('Error. Try again.')
+        return -1
 
 if __name__ == '__main__':
     main()
