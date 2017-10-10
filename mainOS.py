@@ -16,6 +16,11 @@ def main():
         printOSinfo()
         print('Error. Try again.')
         return -1
+    print('Success')
+    input()
+    clear_screen()
+    printOSinfo()
+    input()
 
 if __name__ == '__main__':
     main()

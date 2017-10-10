@@ -57,3 +57,11 @@ def check_input_no_enter_button(inputedChar):
     :return: not inputedChar == ''
     """
     return not inputedChar == ''
+
+def exception_checking(object):
+    """
+
+    :param object: any object
+    :return: if object == exception
+    """
+    return object == Exception
